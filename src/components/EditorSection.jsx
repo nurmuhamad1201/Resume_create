@@ -1,4 +1,4 @@
-// components/EditorSection.js
+ 
 import React, { useState } from 'react';
 import { Box, TextField, Button, Chip, IconButton, Typography } from '@mui/material';
 import { Add, Close } from '@mui/icons-material';
@@ -206,7 +206,7 @@ export default function EditorSection({
         alignItems: 'center',
         mb: 2
       }}>
-        {/* Left side - Drag handle and title */}
+       
         <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
           <IconButton
             size="small"

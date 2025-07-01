@@ -1,4 +1,4 @@
-// components/DraggableList.js
+ 
 import React, { useState } from 'react';
 import {
   DndContext,
@@ -30,7 +30,7 @@ export default function DraggableList({ sections, onReorder, onUpdate, onDelete,
     }),
     useSensor(KeyboardSensor, {
       coordinateGetter: (event, args) => {
-        // Custom keyboard coordinate getter if needed
+        
         return args.currentCoordinates;
       },
     })

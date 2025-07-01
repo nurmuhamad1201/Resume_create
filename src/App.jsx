@@ -28,7 +28,7 @@ function App() {
   const theme = useTheme();
   const fullScreen = useMediaQuery(theme.breakpoints.down('sm'));
 
-  // Load from localStorage on mount
+ 
   useEffect(() => {
     if (typeof window !== 'undefined') {
       const saved = localStorage.getItem('resume');
@@ -50,7 +50,7 @@ function App() {
     }
   }, []);
 
-  // Save to localStorage when sections change (after initial load)
+ 
   useEffect(() => {
     if (sections.length > 0 && !isLoading) {
       localStorage.setItem('resume', JSON.stringify(sections));
@@ -134,7 +134,7 @@ function App() {
         return;
     }
     
-    // Update the specific section with AI-generated data
+    
     setSections(sections.map(s => 
       s.id === sectionId ? { ...s, data: updatedData } : s
     ));
